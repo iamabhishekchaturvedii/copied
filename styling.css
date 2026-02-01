@@ -1,0 +1,142 @@
+/* =========================
+   Global Reset
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================
+   Page Background
+   ========================= */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fde2e4, #fadadd);
+}
+
+/* =========================
+   Container
+   ========================= */
+.container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   Card
+   ========================= */
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 520px; /* Bigger card */
+  padding: 40px 32px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   Card Image
+   ========================= */
+.card-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffe5ec;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   Title
+   ========================= */
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   Buttons Wrapper
+   ========================= */
+.actions {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* <-- this applies to all buttons */
+}
+/* YES Button */
+.btn-yes {
+  background-color: #ff3b5c;
+  color: #ffffff;
+}
+
+.btn-yes:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(255, 59, 92, 0.4);
+}
+
+/* NO Button */
+/* NO Button */
+/* NO Button */
+/* NO Button */
+.btn-no {
+  background-color: #d9d9d9;
+  color: #333;
+  position: absolute;
+  top: 10px;
+  left: 10px; /* start position */
+  transform: none !important; 
+  transition: none !important;
+  box-shadow: none !important;
+  pointer-events: auto; /* allow hover detection */
+}
+
+/* Disable hover for NO button */
+.btn-no:hover {
+  transform: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+/* =========================
+   Helper Text
+   ========================= */
+.helper-text {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
